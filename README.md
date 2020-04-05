@@ -24,8 +24,5 @@
 
 #### 1.1
 
-- To prevent installation of any other FlipFont update ProductSans.apk
-
-#### 1.2
-
-- Add an activation guide into Magisk installation UI
+- Update ProductSans.apk || Module will no longer install Roboto alongside Google Product Sans
+- Change font name from GoogleSans to GoogleProductSans
