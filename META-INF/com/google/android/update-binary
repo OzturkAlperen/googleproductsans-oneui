@@ -6,7 +6,7 @@ ui_print() { echo "$1"; }
 
 require_new_magisk() {
   ui_print "*******************************"
-  ui_print " Please install Magisk v19.0+! "
+  ui_print " Install Magisk v19.0+ "
   ui_print "*******************************"
   exit 1
 }
@@ -42,7 +42,8 @@ print_modname() {
   ui_print " $MODNAME "
   ui_print "$pounds"
   ui_print "*******************"
-  ui_print " Powered by Magisk "
+  ui_print " After a successful reboot go to Settings > Display > Font size and style > Font style and choose GoogleProductSans "
+  ui_print " AlperenOzturk || MAGISK "
   ui_print "*******************"
 }
 
@@ -66,7 +67,7 @@ api_level_arch_detect
 $BOOTMODE && boot_actions || recovery_actions
 
 unzip -o "$ZIPFILE" module.prop -d $TMPDIR >&2
-[ ! -f $TMPDIR/module.prop ] && abort "! Unable to extract zip file!"
+[ ! -f $TMPDIR/module.prop ] && abort "!Zip extraction unsuccessful!"
 
 $BOOTMODE && MODDIRNAME=modules_update || MODDIRNAME=modules
 MODULEROOT=$NVBASE/$MODDIRNAME
@@ -105,7 +106,7 @@ else
   unzip -o "$ZIPFILE" customize.sh -d $MODPATH >&2
 
   if ! grep -q '^SKIPUNZIP=1$' $MODPATH/customize.sh 2>/dev/null; then
-    ui_print "- Extracting module files"
+    ui_print "- Extracting files"
     unzip -o "$ZIPFILE" -x 'META-INF/*' -d $MODPATH >&2
 
     set_perm_recursive $MODPATH 0 0 0755 0644
@@ -125,7 +126,7 @@ if $BOOTMODE; then
 fi
 
 if [ -f $MODPATH/sepolicy.rule -a -e $PERSISTDIR ]; then
-  ui_print "- Installing custom sepolicy patch"
+  ui_print "- Installing sepolicy patch"
   PERSISTMOD=$PERSISTDIR/magisk/$MODID
   mkdir -p $PERSISTMOD
   cp -af $MODPATH/sepolicy.rule $PERSISTMOD/sepolicy.rule
