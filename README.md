@@ -3,9 +3,9 @@
 
 - Samsung Galaxy S10+ (SM-G975F) OneUI 2.1
 
-## Bugs
+## Known Bugs
 
-- None (Please report if you encounter any bug)
+- None
 
 ## Contact
 
