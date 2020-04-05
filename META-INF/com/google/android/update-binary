@@ -42,8 +42,7 @@ print_modname() {
   ui_print " $MODNAME "
   ui_print "$pounds"
   ui_print "*******************"
-  ui_print " After a successful reboot go to Settings > Display > Font size and style > Font style and choose GoogleProductSans "
-  ui_print " AlperenOzturk || MAGISK "
+  ui_print " Powered by Magisk "
   ui_print "*******************"
 }
 
