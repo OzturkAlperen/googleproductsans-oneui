@@ -20,7 +20,7 @@
 
 #### 1.0
 
-- Inital Release
+- Initial Release
 
 #### 1.1
 
