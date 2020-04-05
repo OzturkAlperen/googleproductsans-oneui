@@ -25,3 +25,7 @@
 #### 1.1
 
 - To prevent installation of any other FlipFont update ProductSans.apk
+
+#### 1.2
+
+- Add an activation guide into Magisk installation UI
