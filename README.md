@@ -12,6 +12,10 @@
 - <a href="https://t.me/alperen_ozturk">Telegram</a>
 - <a href="https://github.com/Alperen-Ozturk/googleproductsans-oneui/">GitHub</a>
 
+## Notes
+
+- This module will also install Samsung Sans as a placeholder font.
+
 ## Changelog
 
 #### 1.0
@@ -20,4 +24,4 @@
 
 #### 1.1
 
-- To prevent installation of any other FlipFont, change placeholder font from Samsung Sans to SamsungOne (tn)
+- To prevent installation of any other FlipFont update ProductSans.apk
