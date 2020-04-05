@@ -21,7 +21,6 @@ mount /data 2>/dev/null
 [ $MAGISK_VER_CODE -lt 19000 ] && require_new_magisk
 
 if [ $MAGISK_VER_CODE -ge 20400 ]; then
-  # New Magisk have complete installation logic within util_functions.sh
   install_module
   exit 0
 fi
