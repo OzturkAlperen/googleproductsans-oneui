@@ -15,6 +15,7 @@
 ## Notes
 
 - This module will also install Samsung Sans as a placeholder font.
+- This is a Magisk module so it needs Magisk ROOT.
 
 ## Changelog
 
